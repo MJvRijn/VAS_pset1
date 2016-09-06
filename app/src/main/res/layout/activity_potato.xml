@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="nl.mjvrijn.matthewvanrijn_pset1.PotatoActivity">
+    tools:context="nl.mjvrijn.matthewvanrijn_pset1.PotatoActivity"
+    android:background="#e3e3e3">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,39 +17,123 @@
         android:id="@+id/title_view"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp" />
+        android:textSize="25sp" />
 
     <RelativeLayout
         android:id="@+id/potato_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title_view"
+        android:layout_above="@+id/checkboxes_title_view"
         android:layout_centerHorizontal="true">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
+            android:id="@+id/potato_body"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/body"
             android:contentDescription="@string/potato_body" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_arms"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/arms"
+            android:contentDescription="@string/potato_arms" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_ears"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ears"
+            android:contentDescription="@string/potato_ears" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_eyebrows"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/eyebrows"
+            android:contentDescription="@string/potato_eyebrows" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_eyes"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/eyes"
+            android:contentDescription="@string/potato_eyes" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_glasses"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/glasses"
+            android:contentDescription="@string/potato_glasses" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_hat"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/hat"
+            android:contentDescription="@string/potato_hat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_mouth"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mouth"
+            android:contentDescription="@string/potato_mouth" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_mustache"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mustache"
+            android:contentDescription="@string/potato_mustache" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_nose"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/nose"
+            android:contentDescription="@string/potato_nose" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potato_shoes"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shoes"
+            android:contentDescription="@string/potato_shoes" />
+
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/checkbox_title"
-        android:id="@+id/checkboxes_title_view"
-        android:layout_below="@id/potato_layout"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
-
     <LinearLayout
+        android:id="@+id/checkboxes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_below="@id/checkboxes_title_view"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -117,5 +202,14 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_title"
+        android:id="@+id/checkboxes_title_view"
+        android:layout_above="@id/checkboxes"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
 
 </RelativeLayout>
