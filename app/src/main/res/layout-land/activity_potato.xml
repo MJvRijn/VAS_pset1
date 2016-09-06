@@ -8,197 +8,138 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="nl.mjvrijn.matthewvanrijn_pset1.PotatoActivity"
-    android:background="#e3e3e3"
-    android:orientation="horizontal">
+    android:background="#e3e3e3">
 
     <RelativeLayout
-        android:id="@+id/potato_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_title"
-            android:id="@+id/title_view"
-            android:textSize="25sp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:id="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_body"
-            android:background="@drawable/body"
-            android:contentDescription="@string/potato_body" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_body"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/body"
+        android:contentDescription="@string/potato_body" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_arms"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/arms"
-            android:contentDescription="@string/potato_arms" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_arms"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/arms"
+        android:contentDescription="@string/potato_arms" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_ears"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/ears"
-            android:contentDescription="@string/potato_ears" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_ears"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ears"
+        android:contentDescription="@string/potato_ears" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_eyebrows"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/eyebrows"
-            android:contentDescription="@string/potato_eyebrows" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_eyebrows"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/eyebrows"
+        android:contentDescription="@string/potato_eyebrows" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_eyes"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/eyes"
-            android:contentDescription="@string/potato_eyes" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_eyes"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/eyes"
+        android:contentDescription="@string/potato_eyes" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_glasses"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/glasses"
-            android:contentDescription="@string/potato_glasses" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_glasses"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/glasses"
+        android:contentDescription="@string/potato_glasses" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_hat"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/hat"
-            android:contentDescription="@string/potato_hat" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_hat"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/hat"
+        android:contentDescription="@string/potato_hat" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_mouth"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/mouth"
-            android:contentDescription="@string/potato_mouth" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_mouth"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mouth"
+        android:contentDescription="@string/potato_mouth" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_mustache"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/mustache"
-            android:contentDescription="@string/potato_mustache" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_mustache"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mustache"
+        android:contentDescription="@string/potato_mustache" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_nose"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/nose"
-            android:contentDescription="@string/potato_nose" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_nose"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/nose"
+        android:contentDescription="@string/potato_nose" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/potato_shoes"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/shoes"
-            android:contentDescription="@string/potato_shoes" />
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potato_shoes"
+        android:layout_below="@+id/title_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shoes"
+        android:contentDescription="@string/potato_shoes" />
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/checkboxes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_toEndOf="@id/potato_layout"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <CheckBox
-                android:text="@string/potato_arms"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_ears"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_eyebrows"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_eyes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_glasses"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="end"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <CheckBox
-                android:text="@string/potato_hat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_mouth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_mustache"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_nose"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="@string/potato_shoes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkbox_title"
@@ -206,5 +147,103 @@
         android:layout_above="@id/checkboxes"
         android:layout_centerHorizontal="true"
         android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/checkboxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:text="@string/potato_arms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_arms"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_ears"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_ears"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_eyebrows"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_eyebrows"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_eyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_eyes"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_glasses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_glasses"
+                    android:onClick="toggleImage"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:text="@string/potato_hat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_hat"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_mouth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_mouth"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_mustache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_mustache"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_nose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_nose"
+                    android:onClick="toggleImage"/>
+
+                <CheckBox
+                    android:text="@string/potato_shoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_shoes"
+                    android:onClick="toggleImage"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
 
 </LinearLayout>
