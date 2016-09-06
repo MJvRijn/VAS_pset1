@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">matthewvanrijn-pset1</string>
+    <string name="app_title">Mr. Potato Head</string>
+    <string name="checkbox_title">Choose body parts to display:</string>
+    <string name="potato_body">Body</string>
+    <string name="potato_arms">Arms</string>
+    <string name="potato_ears">Ears</string>
+    <string name="potato_eyebrows">Eyebrows</string>
+    <string name="potato_eyes">Eyes</string>
+    <string name="potato_glasses">Glasses</string>
+    <string name="potato_hat">Hat</string>
+    <string name="potato_mouth">Mouth</string>
+    <string name="potato_mustache">Mustache</string>
+    <string name="potato_nose">Nose</string>
+    <string name="potato_shoes">Shoes</string>
 </resources>
